@@ -11,8 +11,3 @@ def weight_average(my_list=[]):
         den += tup[1]
 
     return (num / den)
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-
