@@ -8,4 +8,3 @@ def save_to_json_file(my_obj, filename):
         import json
         atta = json.dumps(my_obj)
         archivito.write(atta)
-
