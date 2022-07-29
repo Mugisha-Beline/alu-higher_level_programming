@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-"""This is the documentation for this module. On this file we have to
-write a JSON rep of an object to a file"""
+""" add, load and ve arguments"""
 
+import sys
 
-def save_to_json_file(my_obj, filename):
-    with open(filename, 'w') as archivito:
-        import json
-        atta = json.dumps(my_obj)
-        archivito.write(atta)
+if _name_ == "_main_":
+    save_to_json_file = _import_('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        _import_('6-load_from_json_file').load_from_json_file
+
+    try:
+        items = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        items = []
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, "add_item.json")
