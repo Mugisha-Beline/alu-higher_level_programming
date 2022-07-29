@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ add, load and ve arguments"""
-
 import sys
-
 if _name_ == "_main_":
     save_to_json_file = _import_('5-save_to_json_file').save_to_json_file
     load_from_json_file = \
