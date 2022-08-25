@@ -663,7 +663,7 @@ class TestRectangle_update_kwargs(unittest.TestCase):
 
     def test_update_kwargs_one(self):
         r = Rectangle(10, 10, 10, 10, 10)
-        r.update(id=1)
+[O        r.update(id=1)
         self.assertEqual("[Rectangle] (1) 10/10 - 10/10", str(r))
 
     def test_update_kwargs_two(self):
