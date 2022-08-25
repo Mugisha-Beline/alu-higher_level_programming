@@ -562,7 +562,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
     def test_update_kwargs_None_id_and_more(self):
         s = Square(10, 10, 10, 10)
         s.update(id=None, size=7, x=18)
-        correct = "[Square] (156) 18/10 - 7"
+        correct = "[Square] (None) 18/10 - 7"
         self.assertEqual(correct, str(s))
 
     def test_update_kwargs_twice(self):
@@ -586,7 +586,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "width must be > 0"):
             s.update(size=-3)
 
-[O    def test_update_kwargs_invalid_x(self):
+    def test_update_kwargs_invalid_x(self):
         s = Square(10, 10, 10, 10)
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             s.update(x="invalid")

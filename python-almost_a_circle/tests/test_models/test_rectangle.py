@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines unittests for models/rectangle.py
-"""
+"""unittests for models/rectangle.py"""
 import io
 import sys
 import unittest
@@ -8,7 +7,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 
 
-class TestRectangle_instantiation(unittest.TestCase):
+class TestRectangle_Instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Rectangle class."""
 
     def test_rectangle_is_base(self):
@@ -97,7 +96,7 @@ class TestRectangle_instantiation(unittest.TestCase):
         self.assertEqual(10, r.y)
 
 
-class TestRectangle_width(unittest.TestCase):
+class TestRectangle_Width(unittest.TestCase):
     """Unittests for testing initialization of Rectangle width attribute."""
 
     def test_None_width(self):
@@ -663,7 +662,7 @@ class TestRectangle_update_kwargs(unittest.TestCase):
 
     def test_update_kwargs_one(self):
         r = Rectangle(10, 10, 10, 10, 10)
-[O        r.update(id=1)
+        r.update(id=1)
         self.assertEqual("[Rectangle] (1) 10/10 - 10/10", str(r))
 
     def test_update_kwargs_two(self):
