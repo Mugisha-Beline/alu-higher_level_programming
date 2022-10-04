@@ -1,8 +1,5 @@
-
 #!/usr/bin/node
-var language[C is fun,Python is cool,JavaScript is amazing];
-while(i<=2){
-        console.log(language[i]);}
-i++
-
-
+const msg = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+for (let i = 0; i < 3; i++) {
+  console.log(msg[i]);
+}
